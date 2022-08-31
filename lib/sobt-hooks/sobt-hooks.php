@@ -14,3 +14,18 @@ add_shortcode( 'sobt_coauthors_links', function(){
   return $html;
 
 } );
+
+/* SHORTCODE TO RETURN THE COAUTHORS */
+add_shortcode( 'sobt_coauthors', function(){
+  $html = '<div class="coauthors">By ';
+	if ( function_exists('coauthors') ) {
+		$html .= coauthors( null, null, null, null, false );
+	} else {
+		$html .= get_the_author();
+	}
+
+  $html .= '</div>';
+
+  return $html;
+
+} );

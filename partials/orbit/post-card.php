@@ -5,7 +5,7 @@
 <div class="sobt-thumbnail-bg" style="background-image: url( <?php _e( $thumbnail );?> );">
   <a href="<?php _e( $permalink );?>" class="img-link"></a>
 </div>
-<?php echo do_shortcode("[sobt_coauthors_links]"); ?>
+<?php echo do_shortcode("[sobt_coauthors]"); ?>
 <div class="post-desc">
 	<h4 class="title sobt-dec-af"><a href="<?php _e( $permalink );?>"><?php the_title();?></a></h4>
 	<div class="post-excerpt"><?php the_excerpt(); ?></div>

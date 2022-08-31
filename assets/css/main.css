@@ -202,7 +202,8 @@ a.footnote-ref {
   border-radius: 10px;
 }
 
-.sobt-grid .coauthors-link {
+.sobt-grid .coauthors-link,
+.sobt-grid .coauthors {
   font-size: 15px;
   margin-top: 10px;
 }
