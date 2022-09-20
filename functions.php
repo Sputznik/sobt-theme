@@ -5,6 +5,10 @@ if( !defined( 'SOBT_THEME_URI' ) ) {
   define( 'SOBT_THEME_URI', get_stylesheet_directory_uri() );
 }
 
+if( !defined( 'SOBT_THEME_PATH' ) ) {
+  define( 'SOBT_THEME_PATH', get_stylesheet_directory() );
+}
+
 // INCLUDE FILES
 $inc_files = array(
   'lib/sobt-hooks/sobt-hooks.php'

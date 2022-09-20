@@ -29,3 +29,8 @@ add_shortcode( 'sobt_coauthors', function(){
   return $html;
 
 } );
+
+// FILTER TO MODIFY NORMAL SITE LOGO
+add_filter( 'sp_logo_template', function(){
+  return SOBT_THEME_PATH.'/partials/logo.php';
+});
