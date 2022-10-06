@@ -14,7 +14,7 @@ $template = ( $category->slug != 'interviews' ) ? 'grid3' : 'interviews'
     <div class='col-sm-12'>
       <h1 class="text-center text-capitalize page-title">Tagged Under: <?php _e( $category->name );?></h1>
       <div class="orbit-posts-wrapper">
-        <?php echo do_shortcode("[orbit_query posts_per_page='9' style='".$template."' cat='".$category->term_id."' pagination='1' ]"); ?>
+        <?php echo do_shortcode("[orbit_query posts_per_page='-1' style='".$template."' cat='".$category->term_id."']"); ?>
       </div>
     </div>
   </div>
