@@ -5,7 +5,7 @@
  if( function_exists( 'get_coauthors' ) ):
 ?>
 <div class="single-post-author-box">
-  <h5 class="title">About the Author(s)</h5>
+  <h5 class="title"><?php echo $args['headline']; ?></h5>
   <?php $coauthors = get_coauthors(); foreach( $coauthors as $coauthor ): ?>
     <div class="post-author-box">
       <div class="author-avatar">

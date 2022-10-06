@@ -30,6 +30,18 @@ add_shortcode( 'sobt_coauthors', function(){
 
 } );
 
+/* SHORTCODE TO RETURN THE AUTHOR BOX */
+add_shortcode( 'sobt_author_box', function( $atts ){
+  $args = shortcode_atts( array(
+    'headline' => 'About the Author(s)'
+  ), $atts );
+
+  ob_start();
+  include( SOBT_THEME_PATH . "/partials/post/author-box.php" );
+  return ob_get_clean();
+
+} );
+
 // FILTER TO MODIFY NORMAL SITE LOGO
 add_filter( 'sp_logo_template', function(){
   return SOBT_THEME_PATH.'/partials/logo.php';
