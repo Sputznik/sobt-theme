@@ -11,8 +11,3 @@
     <div class="social-share"><?php echo do_shortcode('[addtoany]');?></div>
   </div>
 </div>
-<?php if( !empty( get_the_post_thumbnail() ) ): $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0]; ?>
-<div class="container sobt-col-width">
-  <div class="featured-img" style="background-image:url( <?php _e( $image_url );?> );" role="img" aria-label="<?php _e( get_the_title( $post->ID ) ); ?>"></div>
-</div>
-<?php endif;?>

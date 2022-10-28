@@ -6,6 +6,9 @@ get_header();
 ?>
 <?php get_template_part( 'partials/post/header' );?>
 <div class="container sobt-col-width">
+  <?php if( !empty( get_the_post_thumbnail() ) ):?>
+    <div class="featured-img"><?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?></div>
+  <?php endif;?>
   <div class="post-content sobt-dec-af">
     <?php the_content(); ?>
   </div>
