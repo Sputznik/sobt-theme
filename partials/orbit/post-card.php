@@ -9,5 +9,5 @@
 <div class="post-desc">
 	<h4 class="title sobt-dec-af"><a href="<?php _e( $permalink );?>"><?php the_title();?></a></h4>
 	<div class="post-excerpt"><?php the_excerpt(); ?></div>
-	<div class="read-more"><span class="decoration" aria-hidden="true">&#8212;&#8212;&#8212;&#8212;</span><a href="<?php _e( $permalink );?>">Read More</a></div>
+	<div class="read-more"><span class="decoration" aria-hidden="true">&#8212;&#8212;&#8212;</span><a href="<?php _e( $permalink );?>">Read More</a></div>
 </div>
