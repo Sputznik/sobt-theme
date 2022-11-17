@@ -16,15 +16,19 @@ add_shortcode( 'sobt_coauthors_links', function(){
 } );
 
 /* SHORTCODE TO RETURN THE COAUTHORS */
-add_shortcode( 'sobt_coauthors', function(){
-  $html = '<div class="coauthors">By ';
+add_shortcode( 'sobt_coauthors', function( $atts ){
+  $args = shortcode_atts( array(
+    'prefix'  => 'By'
+  ), $atts );
+
+  $html = "<div class='coauthors'>{$args['prefix']} ";
 	if ( function_exists('coauthors') ) {
 		$html .= coauthors( null, null, null, null, false );
 	} else {
 		$html .= get_the_author();
 	}
 
-  $html .= '</div>';
+  $html .= "</div>";
 
   return $html;
 
