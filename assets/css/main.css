@@ -230,23 +230,24 @@ a.footnote-ref {
 }
 
 .sobt-interviews .post-desc{
-  padding: 30px 25px;
+  padding: 35px 25px;
   color: #ffffff;
 }
 
 .sobt-interviews .quote-icon {
   display: inline-block;
-  width: 25px;
+  width: 35px;
   margin-bottom: 10px;
 }
 
 .sobt-interviews .coauthors {
   display: flex;
   align-items: center;
+  font-size: 20px;
 }
 
 .sobt-interviews .decoration {
-  letter-spacing: -2px;
+  letter-spacing: -4px;
   margin-right: 10px;
 }
 
